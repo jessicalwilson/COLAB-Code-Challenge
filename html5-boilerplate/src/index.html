@@ -13,335 +13,340 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Source+Sans+Pro:300,400,900&display=swap"
+    rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/8b15b0454e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <a href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
-    <nav class="primary-nav">
-      <ul class="nav-list">
-        <li class="list-item menu-item-has-children">
-          <a href="">Products</a>
-          <ul class="sub-menu">
-            <li><a href="">Sauces</a></li>
-            <li><a href="">Powders & Pastes</a></li>
-          </ul>
-        </li>
-        <li class="list-item"><a href="">Authentic Cooking</a></li>
-        <li class="list-item"><a href="">Recipes</a></li>
-        <li class="list-item"><a href="">Blog</a></li>
-        <li class="list-item"><a href="">About</a></li>
-        <li class="list-item menu-item-has-children">
-          <a href="">Shop</a>
-          <ul class="sub-menu">
-            <li><a href="">Apparel</a></li>
-            <li><a href="">Books</a></li>
-          </ul>
-        </li>
-        <li class="list-item"><i class="fas fa-shopping-cart"></i></li>
-        <li class="list-item"><i class="fas fa-search"></i></li>
-        <input type="text" id="site-search" name="site-search" placeholder="Search">
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Authentic Mexican & Mexican-Inspired Recipes</h1>
-        <span><p>There are an infinite number of ways to love Mexican food-get creative with our sauces, salsas, and spices</p></span>
-      </div>
-      <div class="featured-recipe">
-        <img class="featured-recipe-image" src="img/hero.jpg">
-        <div class="featured-recipe-content">
-          <h2>Mexican Machera</h2>
-          <h3>(shredded beef)</h3>
-          <img src ="img/icons/chili.svg">
-          <p>This easy and succulent shredded beef can be loaded into tacos, enchiladas, or to top off mile high nachos. Toss with Toro Chili Sauce for an added zest.</p>
-          <button>Read More</button>
-          <div class="featured-social-media">
-            <div class="featured-likes">
-              <span><i class="far fa-heart"></i></span>
-              <p>128</p>
-            </div>
-            <div class="featured-comments">
-              <span><i class="far fa-comment-alt"></i></span>
-              <p>54</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="search-filters">
-      <div class="search-recipes">
-        <span><i class="fas fa-search"></i></span>
-        <input type="text" id="search-recipes" name="search-recipes" placeholder="Search Recipes">
-      </div>
-      <div class="filter-recipes">
-        <button type="button">
-          <span>Filter</span>
-          <img src="img/icons/filter.svg">
-        </button>
-        <ul class="filters">
-          <li>Filter 1</li>
-          <li>Filter 2</li>
+  <div class ="site">
+    <header class="header">
+      <a class="header__logo" href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
+      <nav class="primary-nav">
+        <ul class="nav-list">
+          <li class="list-item menu-item-has-children">
+            <a href="">Products</a>
+            <ul class="sub-menu">
+              <li><a href="">Sauces</a></li>
+              <li><a href="">Powders & Pastes</a></li>
+            </ul>
+          </li>
+          <li class="list-item"><a href="">Authentic Cooking</a></li>
+          <li class="list-item"><a href="">Recipes</a></li>
+          <li class="list-item"><a href="">Blog</a></li>
+          <li class="list-item"><a href="">About</a></li>
+          <li class="list-item menu-item-has-children">
+            <a href="">Shop</a>
+            <ul class="sub-menu">
+              <li><a href="">Apparel</a></li>
+              <li><a href="">Books</a></li>
+            </ul>
+          </li>
+          <li class="list-item"><i class="fas fa-shopping-cart"></i></li>
+          <li class="list-item site-search-icon"><i class="fas fa-search"></i></li>
+          <input type="text" id="site-search" class="site-search-input" name="site-search" placeholder="Search">
         </ul>
-      </div>
-    </section>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__text">
+          <h1>Authentic Mexican & Mexican-Inspired Recipes</h1>
+          <span><p>There are an infinite number of ways to love Mexican food-get creative with our sauces, salsas, and spices</p></span>
+        </div>
+        <div class="featured-recipe">
+          <img class="featured-recipe__image" src="img/hero.jpg">
+          <div class="featured-recipe__content">
+            <h2 class="featured-recipe__title">Mexican Machera</h2>
+            <h3 class="featured-recipe__sub-title">(shredded beef)</h3>
+            <img src ="img/icons/chili.svg">
+            <p>This easy and succulent shredded beef can be loaded into tacos, enchiladas, or to top off mile high nachos. Toss with Toro Chili Sauce for an added zest.</p>
+            <button>Read More</button>
+            <div class="featured-social-media">
+              <div class="featured-likes">
+                <span><i class="far fa-heart"></i></span>
+                <p>128</p>
+              </div>
+              <div class="featured-comments">
+                <span><i class="far fa-comment-alt"></i></span>
+                <p>54</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="recipe-grid">
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Huevos Rancheros Tostada</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
+      <section class="search-filters">
+        <div class="search-recipes">
+          <span><i class="fas fa-search"></i></span>
+          <input type="text" id="search-recipes" name="search-recipes" placeholder="Search Recipes">
         </div>
-        <img class="recipe-image" src="img/recipes/huevos-rancheros.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>33</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>7</p>
-          </div>
+        <div class="filter-recipes">
+          <button type="button">
+            <span>Filter</span>
+            <img src="img/icons/filter.svg">
+          </button>
+          <ul class="filters">
+            <li>Filter 1</li>
+            <li>Filter 2</li>
+          </ul>
         </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Sopes De Masa De Maiz</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/sopes.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>14</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>2</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Salmon Tacos</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/salmon-tacos.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>12</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>5</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Chile Colorado</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/chile-colorado.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>3</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>0</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Mexican Chicken Soup</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/mexican-soup.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>85</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>9</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Chicken Mole Poblano</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/chicken-mole.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>61</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>4</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Sopa De Tortilla</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/sopa-tortilla.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>90</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>2</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Ceviche with Totopos</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/ceviche.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>38</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>6</p>
-          </div>
-        </div>
-      </article>
-      <article class="recipe-single">
-        <div class="recipe-copy">
-          <h4>Tacos al Pastor</h4>
-          <p>description description description description</p>
-          <img class="spice-rating" src="">
-        </div>
-        <img class="recipe-image" src="img/recipes/tacos-pastor.jpg">
-        <div class="recipe-social-media">
-          <div class="recipe-likes">
-            <span><i class="far fa-heart"></i></span>
-            <p>74</p>
-          </div>
-          <div class="recipe-comments">
-            <span><i class="far fa-comment-alt"></i></span>
-            <p>3</p>
-          </div>
-        </div>
-      </article>
-      <button>Load More Recipes</button>
-    </section>
+      </section>
 
-    <section class="instagram-grid">
-      <div class="grid-box">
-        <img src="">
-      </div>
-      <div class="grid-box">
-        <img src="">
-      </div>
-      <div class="grid-box">
-        <h2>Did you make an authentic Mexican dish?</h2>
-        <img src="">
-        <p>Tag us @torofoods on Instagram and #authenticcooking</p>
-      </div>
-      <div class="grid-box">
-        <img src="">
-      </div>
-      <div class="grid-box">
-        <img src="">
-      </div>
-      <div class="grid-box">
-        <i class="fab fa-instagram"></i>
-      </div>
-      <div class="grid-box">
-        <img src="">
-      </div>
-      <div class="grid-box"></div>
-      <div class="grid-box">
-        <img src="">
-      </div>
-    </section>
+      <section class="recipe-grid">
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Huevos Rancheros Tostada</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/huevos-rancheros.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>33</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>7</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Sopes De Masa De Maiz</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/sopes.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>14</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>2</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Salmon Tacos</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/salmon-tacos.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>12</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>5</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Chile Colorado</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/chile-colorado.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>3</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>0</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Mexican Chicken Soup</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/mexican-soup.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>85</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>9</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Chicken Mole Poblano</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/chicken-mole.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>61</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>4</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Sopa De Tortilla</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/sopa-tortilla.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>90</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>2</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Ceviche with Totopos</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/ceviche.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>38</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>6</p>
+            </div>
+          </div>
+        </article>
+        <article class="recipe-single">
+          <div class="recipe-copy">
+            <h4>Tacos al Pastor</h4>
+            <p>description description description description</p>
+            <img class="spice-rating" src="">
+          </div>
+          <img class="recipe-image" src="img/recipes/tacos-pastor.jpg">
+          <div class="recipe-social-media">
+            <div class="recipe-likes">
+              <span><i class="far fa-heart"></i></span>
+              <p>74</p>
+            </div>
+            <div class="recipe-comments">
+              <span><i class="far fa-comment-alt"></i></span>
+              <p>3</p>
+            </div>
+          </div>
+        </article>
+        <button>Load More Recipes</button>
+      </section>
 
-    <section class="newsletter-sign-up">
-      <h2>Sign up for Recipes & Cooking Tips</h2>
-      <input type="text" id="first-name" name="first-name" placeholder="First Name">
-      <input type="email" id="email" name="email" placeholder="Email Address">
-      <button>Sign Up</button>
-    </section>
-  </main>
-  <footer>
-    <div class="footer-columns">
-      <div class="footer-col-1">
-        <a href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
-        <p>Food is the soul of Mexico. Toro Foods is a family-owned traditional Mexican wholesale supplier, which provides authentic, wholesome, natural sauces, salsas and spices.</p>
-      </div>
-      <div class="footer-col-2">
-        <a href="">About</a>
-        <a href="">Community</a>
-        <a href="">Careers</a>
-        <a href="">Contact Us</a>
-      </div>
-      <div class="footer-col-3">
-        <span><p>Connect With Us</p></span>
-        <span>200 Toro Circle <br/> Tortugas, NM 88001</span>
-        <a href="tel:1-800-294-6800">+1 800-294-6800</a>
-        <a href="mailto:eat@torofoods.com">eat@torofoods.com</a>
-        <div class="social-links">
-          <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
-          <a href="http://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
-          <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+      <section class="instagram-grid">
+        <div class="grid-box">
+          <img src="img/insta/insta-1.jpg">
+        </div>
+        <div class="grid-box">
+          <img src="img/insta/insta-2.jpg">
+        </div>
+        <div class="grid-box">
+          <h2>Did you make an authentic Mexican dish?</h2>
+          <img src="">
+          <p>Tag us @torofoods on Instagram and #authenticcooking</p>
+        </div>
+        <div class="grid-box">
+          <img src="img/insta/insta-3.jpg">
+        </div>
+        <div class="grid-box">
+          <img src="img/insta/insta-4.jpg">
+        </div>
+        <div class="grid-box">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <div class="grid-box">
+          <img src="img/insta/insta-5.jpg">
+        </div>
+        <div class="grid-box"></div>
+        <div class="grid-box">
+          <img src="img/insta/insta-6.jpg">
+        </div>
+      </section>
+
+      <section class="newsletter-sign-up">
+        <h2>Sign up for Recipes & Cooking Tips</h2>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+        <input type="email" id="email" name="email" placeholder="Email Address">
+        <button>Sign Up</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-col-1">
+          <a href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
+          <p>Food is the soul of Mexico. Toro Foods is a family-owned traditional Mexican wholesale supplier, which provides authentic, wholesome, natural sauces, salsas and spices.</p>
+        </div>
+        <div class="footer-col-2">
+          <a href="">About</a>
+          <a href="">Community</a>
+          <a href="">Careers</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="footer-col-3">
+          <span><p>Connect With Us</p></span>
+          <span>200 Toro Circle <br/> Tortugas, NM 88001</span>
+          <a href="tel:1-800-294-6800">+1 800-294-6800</a>
+          <a href="mailto:eat@torofoods.com">eat@torofoods.com</a>
+          <div class="social-links">
+            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
+            <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col-4">
+          <span><p>From The Blog</p></span>
+          <div class="blog-post">
+            <h6>Salsa Macha Is the Nutty, Do-Anything Sauce You Didn't Know You Needed</h6>
+            <p>Enjoy it on tostadas (and many more things).</p>
+          </div>
+          <div class="blog-post">
+            <h6>The Tiny Mexico City Street Where One Family Runs Every Eatery</h6>
+            <p>It's home to the world's best tamales, too.</p>
+          </div>
         </div>
       </div>
-      <div class="footer-col-4">
-        <span><p>From The Blog</p></span>
-        <div class="blog-post">
-          <h6>Salsa Macha Is the Nutty, Do-Anything Sauce You Didn't Know You Needed</h6>
-          <p>Enjoy it on tostadas (and many more things).</p>
+      <div class="footer-utility">
+        <div class="utility-left">
+          <a href="">Privacy</a>
+          <a href="">Terms</a>
+          <a href="">Help</a>
         </div>
-        <div class="blog-post">
-          <h6>The Tiny Mexico City Street Where One Family Runs Every Eatery</h6>
-          <p>It's home to the world's best tamales, too.</p>
+        <div class="utility-right">
+          <p class="copyright">Copyright &copy; 2018 Toro Foods</p>
         </div>
       </div>
-    </div>
-    <div class="footer-utility">
-      <div class="utility-left">
-        <a href="">Privacy</a>
-        <a href="">Terms</a>
-        <a href="">Help</a>
-      </div>
-      <div class="utility-right">
-        <p class="copyright">Copyright &copy; 2018 Toro Foods</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
 
 
