@@ -13,8 +13,9 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Source+Sans+Pro:300,400,900&display=swap"
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Source+Sans+Pro:300,400,600&display=swap"
     rel="stylesheet">
+
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/8b15b0454e.js" crossorigin="anonymous"></script>
@@ -34,7 +35,7 @@
             </ul>
           </li>
           <li class="list-item"><a href="">Authentic Cooking</a></li>
-          <li class="list-item"><a href="">Recipes</a></li>
+          <li class="list-item current-menu-item"><a href="">Recipes</a></li>
           <li class="list-item"><a href="">Blog</a></li>
           <li class="list-item"><a href="">About</a></li>
           <li class="list-item menu-item-has-children">
@@ -44,9 +45,11 @@
               <li><a href="">Books</a></li>
             </ul>
           </li>
-          <li class="list-item"><i class="fas fa-shopping-cart"></i></li>
-          <li class="list-item site-search-icon"><i class="fas fa-search"></i></li>
-          <input type="text" id="site-search" class="site-search-input" name="site-search" placeholder="Search">
+          <li class="list-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="list-item site-search-icon">
+            <a href=""><i class="fas fa-search"></i></a>
+            <input type="text" id="site-search" class="site-search-input" name="site-search" placeholder="Search">
+        </li>
         </ul>
       </nav>
     </header>
@@ -54,7 +57,9 @@
       <section class="hero">
         <div class="hero__text">
           <h1 class="hero__title">Authentic Mexican & Mexican-Inspired Recipes</h1>
-          <span class="hero__sub-title"><p>There are an infinite number of ways to love Mexican food -get creative with our sauces, salsas, and spices</p></span>
+          <span class="hero__sub-title">
+            <p>There are an infinite number of ways to love Mexican food -get creative with our <a href="">sauces</a>, <a href="">salsas</a>, and <a href="">spices</a></p>
+          </span>
         </div>
         <div class="featured-recipe">
           <img class="featured-recipe__image" src="img/hero.jpg">
@@ -64,7 +69,7 @@
               <h3 class="featured-recipe__sub-title">(shredded beef)</h3>
               <img class="featured-recipe__chili" src ="img/icons/chili.svg">
               <p class="featured-recipe__copy">This easy and succulent shredded beef can be loaded into tacos, enchiladas, or to top off mile high nachos. Toss with Toro Chili Sauce for an added zest.</p>
-              <button class="featured-recipe__button">Read More</button>
+              <button class="featured-recipe__button"><a class="button-link" href="#">Read More</a></button>
             </div>
             <div class="featured-recipe__social-media">
               <div class="featured__likes">
@@ -99,168 +104,188 @@
 
       <section class="recipe-grid">
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Huevos Rancheros Tostada</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/huevos-rancheros.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Huevos Rancheros Tostada</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/huevos-rancheros.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>33</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>7</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Sopes De Masa De Maiz</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/sopes.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Sopes De Masa De Maiz</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/sopes.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>14</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>2</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Salmon Tacos</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/salmon-tacos.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Salmon Tacos</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/salmon-tacos.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>12</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>5</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Chile Colorado</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/chile-colorado.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Chile Colorado</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/chile-colorado.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>3</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>0</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Mexican Chicken Soup</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/mexican-soup.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Mexican Chicken Soup</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/mexican-soup.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>85</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>9</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Chicken Mole Poblano</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/chicken-mole.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Chicken Mole Poblano</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/chicken-mole.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>61</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>4</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Sopa De Tortilla</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/sopa-tortilla.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Sopa De Tortilla</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/sopa-tortilla.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>90</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>2</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Ceviche with Totopos</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/ceviche.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Ceviche with Totopos</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/ceviche.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>38</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>6</p>
             </div>
           </div>
         </article>
         <article class="recipe-single">
-          <div class="recipe__copy">
-            <h4 class="recipe__title">Tacos al Pastor</h4>
-            <p>description description description description</p>
-            <img class="spice-rating" src="">
-          </div>
-          <img class="recipe__image" src="img/recipes/tacos-pastor.jpg">
+          <a class="recipe-single__link" href="">
+            <div class="recipe__copy">
+              <h4 class="recipe__title">Tacos al Pastor</h4>
+              <p class="recipe__description">description description description description</p>
+              <img class="spice-rating" src="">
+            </div>
+          </a>
+          <a href=""><img class="recipe__image" src="img/recipes/tacos-pastor.jpg"></a>
           <div class="recipe__social-media">
             <div class="recipe__likes">
-              <span><i class="far fa-heart"></i></span>
+              <a href=""><i class="far fa-heart"></i></a>
               <p>74</p>
             </div>
             <div class="recipe__comments">
-              <span><i class="far fa-comment-alt"></i></span>
+              <a href=""><i class="far fa-comment-alt"></i></a>
               <p>3</p>
             </div>
           </div>
         </article>
-        <button>Load More Recipes</button>
+        <div class="recipe__load-more">
+          <button class="load-more-button">Load More Recipes</button>
+        </div>
       </section>
 
       <section class="instagram-grid">
@@ -302,39 +327,43 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-columns">
-        <div class="footer-col-1">
+      <div class="footer__columns">
+        <div class="footer__col-1">
           <a href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
-          <p>Food is the soul of Mexico. Toro Foods is a family-owned traditional Mexican wholesale supplier, which provides authentic, wholesome, natural sauces, salsas and spices.</p>
+          <p class="footer__col-1-text">Food is the soul of Mexico. Toro Foods is a family-owned traditional Mexican wholesale supplier, which provides authentic, wholesome, natural sauces, salsas and spices.</p>
         </div>
-        <div class="footer-col-2">
+        <div class="footer__col-2">
           <a href="">About</a>
           <a href="">Community</a>
           <a href="">Careers</a>
           <a href="">Contact Us</a>
         </div>
-        <div class="footer-col-3">
-          <span><p>Connect With Us</p></span>
-          <span>200 Toro Circle <br/> Tortugas, NM 88001</span>
-          <a href="tel:1-800-294-6800">+1 800-294-6800</a>
-          <a href="mailto:eat@torofoods.com">eat@torofoods.com</a>
-          <div class="social-links">
+        <div class="footer__col-3">
+          <span class="column-header"><p>Connect With Us</p></span>
+          <span><p class="address">200 Toro Circle <br/> Tortugas, NM 88001</p></span>
+          <a class="footer__telephone" href="tel:1-800-294-6800">+1 800-294-6800</a>
+          <a class="footer__email" href="mailto:eat@torofoods.com">eat@torofoods.com</a>
+          <div class="footer__social-links">
             <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
             <a href="http://www.pinterest.com"><i class="fab fa-pinterest-p"></i></a>
             <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="http://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-        <div class="footer-col-4">
-          <span><p>From The Blog</p></span>
-          <div class="blog-post">
-            <h6>Salsa Macha Is the Nutty, Do-Anything Sauce You Didn't Know You Needed</h6>
-            <p>Enjoy it on tostadas (and many more things).</p>
-          </div>
-          <div class="blog-post">
-            <h6>The Tiny Mexico City Street Where One Family Runs Every Eatery</h6>
-            <p>It's home to the world's best tamales, too.</p>
-          </div>
+        <div class="footer__col-4">
+          <span class="column-header"><p>From The Blog</p></span>
+          <a class="blog-link" href="">
+            <div class="blog-post">
+              <h6 class="footer__blog-title">Salsa Macha Is the Nutty, Do-Anything Sauce You Didn't Know You Needed</h6>
+              <p class="footer__blog-copy">Enjoy it on tostadas (and many more things).</p>
+            </div>
+          </a>
+          <a class="blog-link" href="">
+            <div class="blog-post">
+              <h6 class="footer__blog-title">The Tiny Mexico City Street Where One Family Runs Every Eatery</h6>
+              <p class="footer__blog-copy">It's home to the world's best tamales, too.</p>
+            </div>
+          </a>
         </div>
       </div>
       <div class="footer-utility">
