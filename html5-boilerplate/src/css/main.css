@@ -3,6 +3,10 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     color: rgba(39, 59, 73, 100);
 }
+a {
+    text-decoration: none;
+    color: unset;
+}
 
 img {
     max-width: 100%;
@@ -25,12 +29,8 @@ img {
     padding: 0 100px;
     background-color: #FFFFFF;
     font-family: 'Playfair Display', serif;
-}
-
-.header a {
     color: rgba(39,59,73,100);
     font-size: 16px;
-    text-decoration: none;
 }
 
 header a:hover {
@@ -202,7 +202,7 @@ header a:hover {
 }
 
 .featured-recipe__button:hover {
-    background-color: #EA6964;
+    background-color: #C72F4C;
 }
 
 .button-link {
@@ -210,7 +210,6 @@ header a:hover {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 18px;
-    text-decoration: none;
 }
 
 .featured-recipe__social-media {
@@ -243,11 +242,69 @@ header a:hover {
     display: flex;
     max-width: 500px;
     padding: 0 100px;
-    margin: 10px auto;
+    margin: -30px auto;
+    margin-bottom: 45px;
+}
+
+.search-recipes__icon {
+    position: absolute;
+    color: #EA5550;
+    font-size: 21px;
+    padding-top: 1em;
+    padding-left: 0.75em;
+}
+
+.search-recipes__input {
+    width: 443px;
+    height: 56px;
+    padding-left: 2.5em;
+    font-size: 18px;
+    color: #C9CED2;
+    border: 1px solid #AEB5BB;
+    border-radius: 2px;
+}
+
+.search-recipes__input::placeholder {
+    color: #C9CED2;
+}
+
+.recipes-filter__text {
+    color: #EA5550;
+    font-size: 18px;
+    margin-right: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.recipes-filter__button {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    border: 1px solid #AEB5BB;
+    border-radius: 2px;
+    margin-left: -2px;
+    padding-left: 2.5em;
+    font-weight: 600;
+    position: relative;
+}
+
+.recipes-filter:hover > .filters {
+    display: block;
 }
 
 .filters {
     display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #EEEEEE;
+    width: 150px;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-left: -2px;
+}
+
+.filters li {
+    padding: 12px 28px;
 }
 
 /* Recipe Grid Styles */
@@ -264,11 +321,6 @@ header a:hover {
     margin-top: 40px;
     border: solid 2px #EEE;
     border-radius: 6px;
-}
-
-.recipe-single__link {
-    color: unset;
-    text-decoration: none;
 }
 
 .recipe__copy {
@@ -303,7 +355,7 @@ header a:hover {
     align-items: center;
 }
 
-.recipel__likes > a,
+.recipe__likes > a,
 .recipe__likes > p,
 .recipe__comments > a,
 .recipe__comments > p {
@@ -345,6 +397,9 @@ header a:hover {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     font-size: 18px;
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 }
 
 .load-more-button:hover {
@@ -357,10 +412,84 @@ header a:hover {
 .instagram-grid {
     display: flex;
     flex-wrap: wrap;
+    color: white;
+    text-align: center;
 }
 
 .instagram-grid img {
-    max-width: 288px;
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-box {
+    width: calc(100% / 5);
+}
+
+.grid__image {
+    transition-property: scale();
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.grid__image:hover {
+    transform: scale(1.01);
+}
+
+.instagram-grid__callout {
+    width: calc((100% / 5) * 2);
+    background-color: #6FC4BE;
+}
+
+.grid__callout__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    /* position: relative; */
+}
+
+.callout__separator {
+    width: 55px;
+    height: 10px;
+}
+
+/* .grid__callout__title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: white url(../img/icons/separator.svg) center;
+} */
+
+.grid__callout__text {
+    font-size: 24px;
+    margin-top: 5px;
+    padding: 0 75px;
+}
+
+.callout__link {
+    font-weight: 400;
+}
+
+.callout__link:hover {
+    color: #30958C;
+}
+
+.instagram-grid__icon {
+    background-color: #EA5550;
+    padding-top: 0.5em;
+    font-size: 120px;
+    transition-property: background-color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.instagram-grid__icon:hover {
+    background-color: #C72F4C;
+}
+
+.instagram-grid__empty {
+    background-color: #DAE510;
 }
 
 /* Newsletter Sign Up Styles */
@@ -368,8 +497,52 @@ header a:hover {
 .newsletter-sign-up {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     margin: 4em 0;
+}
+
+.sign-up__text {
+    font-family: 'Playfair Display', serif;
+    margin-right: 1em;
+}
+
+.newsletter-sign-up input {
+    width: 280px;
+    height: 46px;
+    border: 1px solid #D7DADD;
+    border-radius: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    padding-left: 1em;
+}
+
+.newsletter-sign-up input::placeholder {
+    color: #C9CED2;
+}
+
+.newsletter-sign-up input + input {
+    margin-left: 1.25em;
+}
+
+.sign-up__button {
+    background-color: #EA5550;
+    width: 127px;
+    height: 46px;
+    margin-left: 1.25em;
+    border-radius: 2px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sign-up__button:hover {
+    background-color: #C72F4C;
+}
+
+.sign-up__link {
+    padding: 10px;
 }
 
 /* Footer Styles */
@@ -407,12 +580,12 @@ header a:hover {
 }
 
 .footer__col-2 a {
+    width: fit-content;
+    padding: 5px 0;
+    padding-left: 40px;
     color: #EA5550;
     font-size: 16px;
     font-family: 'Playfair Display', serif;
-    text-decoration: none;
-    padding: 5px 0;
-    padding-left: 40px;
 }
 
 .footer__col-2 a:hover {
@@ -424,14 +597,6 @@ header a:hover {
     margin-bottom: 1.5em;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
-}
-
-.footer__col-3 {
-    
-}
-
-.footer__col-3 a {
-    text-decoration: none;
 }
 
 .footer__telephone,
@@ -483,11 +648,6 @@ header a:hover {
     font-size: 16px;
 }
 
-.footer__col-4 a {
-    color: unset;
-    text-decoration: none;
-}
-
 .footer__col-4 a:hover {
     color: #EA5550;
 }
@@ -513,8 +673,6 @@ header a:hover {
 }
 
 .footer-utility a {
-    color: unset;
-    text-decoration: none;
     font-weight: 400;
 }
 

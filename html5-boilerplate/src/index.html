@@ -87,17 +87,17 @@
 
       <section class="search-filters">
         <div class="search-recipes">
-          <span></span><i class="fas fa-search"></i></span>
-          <input type="text" id="search-recipes" name="search-recipes" placeholder="Search Recipes">
+          <a href=""><i class="fas fa-search search-recipes__icon"></i></a>
+          <input class="search-recipes__input" type="text" id="search-recipes" name="search-recipes" placeholder="Search Recipes">
         </div>
-        <div class="filter-recipes">
-          <button type="button">
-            <span>Filter</span>
-            <img src="img/icons/filter.svg">
+        <div class="recipes-filter">
+          <button class="recipes-filter__button" type="button">
+            <a class="recipes-filter__text" href="">Filter</a>
+            <a class="recipes-filter__link" href=""><img src="img/icons/filter.svg"></a>
           </button>
           <ul class="filters">
-            <li>Filter 1</li>
-            <li>Filter 2</li>
+            <li><a href="">Filter 1</a></li>
+            <li><a href="">Filter 2</a></li>
           </ul>
         </div>
       </section>
@@ -289,40 +289,28 @@
       </section>
 
       <section class="instagram-grid">
-        <div class="grid-box">
-          <img src="img/insta/insta-1.jpg">
+        <img class="grid-box grid__image" src="img/insta/insta-1.jpg">
+        <img class="grid-box grid__image" src="img/insta/insta-2.jpg">
+        <div class="grid-box instagram-grid__callout">
+          <h2 class="grid__callout__title">Did you make an authentic Mexican dish?</h2>
+          <img class="callout__separator" src="img/icons/separator.svg">
+          <p class="grid__callout__text">Tag us <a class="callout__link" href="">@torofoods</a> on Instagram and hashtag <a class="callout__link" href="">#authenticcooking</a></p>
         </div>
-        <div class="grid-box">
-          <img src="img/insta/insta-2.jpg">
+        <img class="grid-box grid__image" src="img/insta/insta-3.jpg">
+        <img class="grid-box grid__image" src="img/insta/insta-4.jpg">
+        <div class="grid-box instagram-grid__icon">
+          <a class="grid__link" href=""><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="grid-box">
-          <h2>Did you make an authentic Mexican dish?</h2>
-          <img src="">
-          <p>Tag us @torofoods on Instagram and #authenticcooking</p>
-        </div>
-        <div class="grid-box">
-          <img src="img/insta/insta-3.jpg">
-        </div>
-        <div class="grid-box">
-          <img src="img/insta/insta-4.jpg">
-        </div>
-        <div class="grid-box">
-          <i class="fab fa-instagram"></i>
-        </div>
-        <div class="grid-box">
-          <img src="img/insta/insta-5.jpg">
-        </div>
-        <div class="grid-box"></div>
-        <div class="grid-box">
-          <img src="img/insta/insta-6.jpg">
-        </div>
+        <img class="grid-box grid__image" src="img/insta/insta-5.jpg">
+        <div class="grid-box instagram-grid__empty"></div>
+        <img class="grid-box grid__image" src="img/insta/insta-6.jpg">
       </section>
 
       <section class="newsletter-sign-up">
-        <h2>Sign up for Recipes & Cooking Tips</h2>
+        <h2 class="sign-up__text">Sign up for Recipes & Cooking Tips</h2>
         <input type="text" id="first-name" name="first-name" placeholder="First Name">
         <input type="email" id="email" name="email" placeholder="Email Address">
-        <button>Sign Up</button>
+        <button class="sign-up__button"><a class="sign-up__link" href="">Sign Up</a></button>
       </section>
     </main>
 
