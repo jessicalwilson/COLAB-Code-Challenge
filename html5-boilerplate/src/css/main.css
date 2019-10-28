@@ -26,15 +26,32 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 15px 15px 0 15px;
     background-color: #FFFFFF;
     font-family: 'Playfair Display', serif;
     color: rgba(39,59,73,100);
     font-size: 16px;
 }
 
-header a:hover {
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 0 100px;
+    }
+}
+
+.header a:hover {
     color: #EA5550;
+}
+
+.header__logo {
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header__logo {
+        margin: 0;
+    }
 }
 
 .nav-list {
@@ -42,11 +59,24 @@ header a:hover {
     flex-wrap: wrap;
     align-content: space-between;
     list-style: none;
+    padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-list {
+        padding-left: 40px;
+    }
 }
 
 .nav-list li {
-    padding: 15px 20px;
+    padding: 15px 10px;
     white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-list-li {
+        padding: 15px 20px;
+    }
 }
 
 .nav-list > li > a {
@@ -55,8 +85,14 @@ header a:hover {
 
 .current-menu-item a {
     color: #EA5550;
-    padding-top: 28px;
+    padding-top: 5px;
     border-top: 3px solid #EA5550;
+}
+
+@media only screen and (min-width: 768px) {
+    .current-menu-item a {
+        padding-top: 28px;
+    }
 }
 
 .menu-item-has-children {
@@ -67,10 +103,16 @@ header a:hover {
     content: "";
     position: absolute;
     top: 24px;
-    right: 4px;
+    right: 0;
     width: 7px;
     height: 5px;
     background-image: url("../img/icons/down-triangle.svg");
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-item-has-children::after {
+        right: 1px;
+    }
 }
 
 .sub-menu {
@@ -124,16 +166,29 @@ header a:hover {
 }
 
 .hero__text {
-    max-width: 45vw;
+    max-width: 75vw;
     margin: 0 auto;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__text {
+        max-width: 45vw;
+        padding-bottom: 75px;
+    }
 }
 
 .hero__title {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 36px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        font-size: 48px;
+    }
 }
 
 .hero__sub-title {
@@ -152,31 +207,60 @@ header a:hover {
 .featured-recipe {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 100px;
+    padding: 0 40px;
     color: white;
 }
 
+@media only screen and (min-width: 768px) {
+    .featured-recipe {
+        padding: 0 100px;
+    }
+}
+
 .featured-recipe__image {
-    width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .featured-recipe__image {
+        width: 50%;
+        margin: 0;
+    }
 }
 
 
 .featured-recipe__content {
     background-color: #6FC4BE;
-    max-width: 50%;
-    padding-top: 100px;
     position: relative;
+    margin-top: 25px;
+    padding-top: 75px;
+}
+
+@media only screen and (min-width: 768px) {
+    .featured-recipe__content {
+        margin-top: 0;
+        max-width: 50%;
+        padding-top: 100px;
+    }
 }
 
 .pinterest-link {
     position: absolute;
-    left: -50px;
-    bottom: 25px;
-    font-size: 32px;
+    left: 15px;
+    bottom: 8px;
+    font-size: 30px;
 }
 
 .pinterest-link:hover {
     opacity: .9;
+}
+
+@media only screen and (min-width: 768px) {
+    .pinterest-link {
+        left: -50px;
+        bottom: 25px;
+        font-size: 32px;
+    }
 }
 
 .featured-recipe__inner {
@@ -189,16 +273,26 @@ header a:hover {
 
 .featured-recipe__title {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 32px;
     margin: 0;
     margin-bottom: 0.15em;
 }
 
 .featured-recipe__sub-title {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 400;
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .featured-recipe__title {
+        font-size: 36px;
+    }
+
+    .featured-recipe__sub-title {
+        font-size: 36px;
+    }
 }
 
 .featured-recipe__chili {
@@ -352,17 +446,34 @@ header a:hover {
 /* Recipe Grid Styles */
 
 .recipe-grid {
-    padding: 0 100px;
+    padding: 0 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
+@media only screen and (min-width: 768px) {
+    .recipe-grid {
+        padding: 0 100px;
+    }
+}
+
 .recipe-single {
-    width: calc((100% - 60px) / 3);
     margin-top: 40px;
     border: solid 2px #EEE;
     border-radius: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+    .recipe-single {
+        width: calc((100% - 40px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .recipe-single {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .recipe__copy {
@@ -457,6 +568,13 @@ header a:hover {
     flex-wrap: wrap;
     color: white;
     text-align: center;
+    padding: 0 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .instagram-grid {
+        padding: 0;
+    }
 }
 
 .instagram-grid img {
@@ -464,8 +582,18 @@ header a:hover {
     height: auto;
 }
 
-.grid-box {
-    width: calc(100% / 5);
+.grid-box + .grid-box {
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-box {
+        width: calc(100% / 5);
+    }
+
+    .grid-box + .grid-box {
+        margin-top: 0;
+    }
 }
 
 .grid__image {
@@ -479,16 +607,27 @@ header a:hover {
 }
 
 .instagram-grid__callout {
-    width: calc((100% / 5) * 2);
     background-color: #6FC4BE;
+}
+
+@media only screen and (min-width: 768px) {
+    .instagram-grid__callout {
+        width: calc((100% / 5) * 2);
+    }
 }
 
 .grid__callout__title {
     font-family: 'Playfair Display', serif;
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 0;
     padding-top: 0.5em;
     /* position: relative; */
+}
+
+@media only screen and (min-width: 768px) {
+    .grid__callout__title {
+        font-size: 36px;
+    }
 }
 
 .callout__separator {
@@ -520,8 +659,9 @@ header a:hover {
 
 .instagram-grid__icon {
     background-color: #EA5550;
-    padding-top: 0.5em;
+    padding: 0.5em;
     font-size: 120px;
+    flex-grow: 1;
     transition-property: background-color;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
@@ -529,6 +669,13 @@ header a:hover {
 
 .instagram-grid__icon:hover {
     background-color: #C72F4C;
+}
+
+@media only screen and (min-width: 768px) {
+    .instagram-grid__icon {
+        flex-grow: 0;
+        padding: 0.5em 0 0 0;
+    }
 }
 
 .instagram-grid__empty {
@@ -592,19 +739,34 @@ header a:hover {
 
 .footer {
     background-image: url("../img/hero-bg.png");
-    padding: 50px 100px 25px 100px;
+    padding: 50px 40px 25px 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding: 50px 100px 25px 100px;
+    }
 }
 
 .footer__columns {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
 }
 
-.footer__col-1,
-.footer__col-2,
-.footer__col-3,
-.footer__col-4 {
-    width: 25%;
+@media only screen and (min-width: 768px) {
+    .footer__columns {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__col-1,
+    .footer__col-2,
+    .footer__col-3,
+    .footer__col-4 {
+        width: 25%;
+    }
 }
 
 .footer__col-1 {
@@ -619,20 +781,43 @@ header a:hover {
 .footer__col-2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__col-2 {
+        margin-bottom: 0;
+    }
 }
 
 .footer__col-2 a {
     width: fit-content;
-    padding: 5px 0;
-    padding-left: 40px;
+    padding: 8px 10px 8px 0;
     color: #EA5550;
     font-size: 16px;
     font-family: 'Playfair Display', serif;
 }
 
+@media only screen and (min-width: 768px) {
+    .footer__col-2 a {
+        padding: 5px 0 5px 40px;
+    }
+}
+
 .footer__col-2 a:hover {
     color: unset;
+}
+
+.footer__col-3 {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__col-3 {
+        margin-bottom: 0;
+    }
 }
 
 .column-header p {
@@ -640,6 +825,10 @@ header a:hover {
     margin-bottom: 1.5em;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
+}
+
+.footer__address {
+    font-style: normal;
 }
 
 .footer__telephone,
@@ -663,7 +852,13 @@ header a:hover {
 }
 
 .footer__social-links {
-    margin-top: 2em;
+    margin-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .footer__social-links {
+        margin-top: 2em;
+    }
 }
 
 .footer__social-links a {
@@ -710,6 +905,7 @@ header a:hover {
 
 .footer-utility {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 2.5em;
