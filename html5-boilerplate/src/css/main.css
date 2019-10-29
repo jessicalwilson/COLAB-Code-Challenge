@@ -48,7 +48,7 @@ img {
     padding-top: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     .header__logo {
         margin: 0;
     }
@@ -211,7 +211,7 @@ img {
     color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050px) {
     .featured-recipe {
         padding: 0 100px;
     }
@@ -221,7 +221,7 @@ img {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050px) {
     .featured-recipe__image {
         width: 50%;
         margin: 0;
@@ -236,7 +236,7 @@ img {
     padding-top: 75px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050px) {
     .featured-recipe__content {
         margin-top: 0;
         max-width: 50%;
@@ -255,7 +255,7 @@ img {
     opacity: .9;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050x) {
     .pinterest-link {
         left: -50px;
         bottom: 25px;
@@ -371,10 +371,28 @@ img {
 
 .search-filters {
     display: flex;
+    flex-wrap: wrap;
     max-width: 500px;
-    padding: 0 100px;
     margin: -30px auto;
     margin-bottom: 45px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .search-filters {
+        flex-wrap: nowrap;
+        padding: 0 100px;
+    }
+}
+
+.search-recipes {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 460px) {
+  .search-recipes {
+    margin: 0;
+  }
 }
 
 .search-recipes__icon {
@@ -386,7 +404,7 @@ img {
 }
 
 .search-recipes__input {
-    width: 443px;
+    width: 250px;
     height: 56px;
     padding-left: 2.5em;
     font-size: 18px;
@@ -395,8 +413,26 @@ img {
     border-radius: 2px;
 }
 
+@media only screen and (min-width: 768px) {
+    .search-recipes__input {
+        width: 443px;
+    }
+}
+
 .search-recipes__input::placeholder {
     color: #C9CED2;
+}
+
+.recipes-filter {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 460px) {
+    .recipes-filter {
+        margin: unset;
+    }
 }
 
 .recipes-filter__text {
@@ -566,12 +602,13 @@ img {
 .instagram-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     color: white;
     text-align: center;
     padding: 0 40px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1059px) {
     .instagram-grid {
         padding: 0;
     }
@@ -586,7 +623,7 @@ img {
     margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1059px) {
     .grid-box {
         width: calc(100% / 5);
     }
@@ -607,11 +644,14 @@ img {
 }
 
 .instagram-grid__callout {
+    max-width: 576px;
+    padding: 0 10px;
     background-color: #6FC4BE;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1059px) {
     .instagram-grid__callout {
+        padding: 0px;
         width: calc((100% / 5) * 2);
     }
 }
@@ -621,7 +661,6 @@ img {
     font-size: 32px;
     margin-bottom: 0;
     padding-top: 0.5em;
-    /* position: relative; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -634,14 +673,6 @@ img {
     width: 55px;
     height: 10px;
 }
-
-/* .grid__callout__title::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 10px;
-    background: white url(../img/icons/separator.svg) center;
-} */
 
 .grid__callout__text {
     font-size: 24px;
@@ -658,8 +689,8 @@ img {
 }
 
 .instagram-grid__icon {
+    display: none;
     background-color: #EA5550;
-    padding: 0.5em;
     font-size: 120px;
     flex-grow: 1;
     transition-property: background-color;
@@ -671,8 +702,9 @@ img {
     background-color: #C72F4C;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1059px) {
     .instagram-grid__icon {
+        display: block;
         flex-grow: 0;
         padding: 0.5em 0 0 0;
     }
@@ -690,15 +722,28 @@ img {
     align-items: center;
     justify-content: center;
     margin: 4em 0;
+    padding: 0 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .newsletter-sign-up {
+        padding: 0 100px;
+    }
 }
 
 .sign-up__text {
     font-family: 'Playfair Display', serif;
-    margin-right: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .sign-up__text {
+        font-family: 'Playfair Display', serif;
+        margin-right: 1em;
+    }
 }
 
 .newsletter-sign-up input {
-    width: 280px;
+    width: 100%;
     height: 46px;
     border: 1px solid #D7DADD;
     border-radius: 2px;
@@ -707,12 +752,24 @@ img {
     padding-left: 1em;
 }
 
+@media only screen and (min-width: 940px) {
+    .newsletter-sign-up input {
+        width: 280px;
+    }
+}
+
 .newsletter-sign-up input::placeholder {
     color: #C9CED2;
 }
 
-.newsletter-sign-up input + input {
-    margin-left: 1.25em;
+.newsletter-sign-up input+input {
+    margin: 1em 0;
+}
+
+@media only screen and (min-width: 940px) {
+    .newsletter-sign-up input+input {
+        margin-left: 1.25em;
+    }
 }
 
 .sign-up__button {
@@ -754,13 +811,13 @@ img {
     flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__columns {
         flex-direction: row;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__col-1,
     .footer__col-2,
     .footer__col-3,
@@ -786,7 +843,7 @@ img {
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__col-2 {
         margin-bottom: 0;
     }
@@ -800,7 +857,7 @@ img {
     font-family: 'Playfair Display', serif;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__col-2 a {
         padding: 5px 0 5px 40px;
     }
@@ -814,7 +871,7 @@ img {
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__col-3 {
         margin-bottom: 0;
     }
@@ -855,7 +912,7 @@ img {
     margin-top: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 875px) {
     .footer__social-links {
         margin-top: 2em;
     }
