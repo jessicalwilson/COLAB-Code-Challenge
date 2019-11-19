@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Toro Foods</title>
+  <title>Recipes | Toro Foods</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -23,30 +23,30 @@
 
 <body>
   <div class ="site">
-    <header class="header">
+    <header class="header header--page">
       <a class="header__logo" href="#"><img src="img/logo.svg" alt="Toro Foods Logo"></a>
       <nav class="primary-nav">
-        <ul class="nav-list">
-          <li class="list-item menu-item-has-children">
+        <ul class="nav-menu">
+          <li class="menu-item menu-item-has-children">
             <a href="">Products</a>
             <ul class="sub-menu">
               <li><a href="">Sauces</a></li>
               <li><a href="">Powders & Pastes</a></li>
             </ul>
           </li>
-          <li class="list-item"><a href="">Authentic Cooking</a></li>
-          <li class="list-item current-menu-item"><a href="">Recipes</a></li>
-          <li class="list-item"><a href="">Blog</a></li>
-          <li class="list-item"><a href="">About</a></li>
-          <li class="list-item menu-item-has-children">
+          <li class="menu-item"><a href="">Authentic Cooking</a></li>
+          <li class="menu-item current-menu-item"><a href="">Recipes</a></li>
+          <li class="menu-item"><a href="">Blog</a></li>
+          <li class="menu-item"><a href="">About</a></li>
+          <li class="menu-item menu-item-has-children">
             <a href="">Shop</a>
             <ul class="sub-menu">
               <li><a href="">Apparel</a></li>
               <li><a href="">Books</a></li>
             </ul>
           </li>
-          <li class="list-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-          <li class="list-item site-search-icon">
+          <li class="menu-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="menu-item site-search-icon">
             <a href=""><i class="fas fa-search"></i></a>
             <input type="text" id="site-search" class="site-search-input" name="site-search" placeholder="Search">
         </li>
@@ -56,30 +56,31 @@
     <main>
       <section class="hero">
         <div class="hero__text">
-          <h1 class="hero__title">Authentic Mexican & Mexican-Inspired Recipes</h1>
+          <h1 class="hero__title">Authentic Mexican & <nobr>Mexican—Inspired</nobr> Recipes</h1>
           <span class="hero__sub-title">
             <p>There are an infinite number of ways to love Mexican food -get creative with our <a class="hero__link" href="">sauces</a>, <a class="hero__link" href="">salsas</a>, and <a class="hero__link" href="">spices</a></p>
           </span>
         </div>
-        <div class="featured-recipe">
-          <img class="featured-recipe__image" src="img/hero.jpg">
-          <div class="featured-recipe__content">
-              <a class="pinterest-link" href="http://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
-            <div class="featured-recipe__inner">
-              <h2 class="featured-recipe__title">Mexican Machera</h2>
-              <h3 class="featured-recipe__sub-title">(shredded beef)</h3>
-              <img class="featured-recipe__chili" src ="img/icons/chili.svg">
-              <p class="featured-recipe__copy">This easy and succulent shredded beef can be loaded into tacos, enchiladas, or to top off mile high nachos. Toss with Toro Chili Sauce for an added zest.</p>
-              <button class="featured-recipe__button"><a class="button-link" href="#">Read More</a></button>
+        <div class="recipe recipe--featured">
+          <div class="recipe__image-wrapper">
+            <img class="recipe__img" src="img/hero.jpg">
+          </div>
+          <div class="recipe__content">
+            <div class="recipe__inner">
+              <h2 class="recipe__title">Mexican Machera</h2>
+              <h3 class="recipe__sub-title">(shredded beef)</h3>
+              <img class="recipe__chili" src ="img/icons/chili.svg">
+              <p class="recipe__copy">This easy and succulent shredded beef can be loaded into tacos, enchiladas, or to top off mile high nachos. Toss with Toro Chili Sauce for an added zest.</p>
+              <a class="button button--primary" href="#">Read More</a>
             </div>
-            <div class="featured-recipe__social-media">
-              <div class="featured__likes">
+            <div class="recipe__social-media">
+              <div class="recipe__likes">
                 <a href=""><i class="far fa-heart"></i></a>
-                <p class="featured__likes__count">128</p>
+                <p class="recipe__like-count">128</p>
               </div>
-              <div class="featured__comments">
+              <div class="recipe__comments">
                 <a href=""><i class="far fa-comment-alt"></i></a>
-                <p class="featured__comments__count">54</p>
+                <p class="recipe__comment-count">54</p>
               </div>
             </div>
           </div>
@@ -92,10 +93,10 @@
           <input class="search-recipes__input" type="text" id="search-recipes" name="search-recipes" placeholder="Search Recipes">
         </div>
         <div class="recipes-filter">
-          <button class="recipes-filter__button" type="button">
+          <div class="recipes-filter__button">
             <a class="recipes-filter__text" href="">Filter</a>
             <a class="recipes-filter__link" href=""><img src="img/icons/filter.svg"></a>
-          </button>
+          </div>
           <ul class="filters">
             <li><a href="">Filter 1</a></li>
             <li><a href="">Filter 2</a></li>
@@ -110,7 +111,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Huevos Rancheros Tostada</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-3"></div>
+                <div class="spice-rating-empty-2"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/huevos-rancheros.jpg"></a>
@@ -130,7 +134,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Sopes De Masa De Maiz</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-2"></div>
+                <div class="spice-rating-empty-3"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/sopes.jpg"></a>
@@ -150,7 +157,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Salmon Tacos</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-1"></div>
+                <div class="spice-rating-empty-4"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/salmon-tacos.jpg"></a>
@@ -170,7 +180,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Chile Colorado</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-1"></div>
+                <div class="spice-rating-empty-4"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/chile-colorado.jpg"></a>
@@ -190,7 +203,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Mexican Chicken Soup</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-1"></div>
+                <div class="spice-rating-empty-4"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/mexican-soup.jpg"></a>
@@ -210,7 +226,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Chicken Mole Poblano</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-4"></div>
+                <div class="spice-rating-empty-1"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/chicken-mole.jpg"></a>
@@ -230,7 +249,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Sopa De Tortilla</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-3"></div>
+                <div class="spice-rating-empty-2"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/sopa-tortilla.jpg"></a>
@@ -250,7 +272,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Ceviche with Totopos</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-2"></div>
+                <div class="spice-rating-empty-3"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/ceviche.jpg"></a>
@@ -270,7 +295,10 @@
             <div class="recipe__copy">
               <h4 class="recipe__title">Tacos al Pastor</h4>
               <p class="recipe__description">description description description description</p>
-              <img class="spice-rating" src="">
+              <div class="spice-rating">
+                <div class="spice-rating-filled-2"></div>
+                <div class="spice-rating-empty-3"></div>
+              </div>
             </div>
           </a>
           <a href=""><img class="recipe__image" src="img/recipes/tacos-pastor.jpg"></a>
@@ -286,7 +314,7 @@
           </div>
         </article>
         <div class="recipe__load-more">
-          <button class="load-more-button"><a href="">Load More Recipes</a></button>
+          <button class="load-more-button">Load More Recipes</button>
         </div>
       </section>
 
@@ -308,11 +336,13 @@
         <img class="grid-box grid__image" src="img/insta/insta-6.jpg">
       </section>
 
-      <section class="newsletter-sign-up">
+      <section class="sign-up">
         <h2 class="sign-up__text">Sign up for Recipes & Cooking Tips</h2>
-        <input type="text" id="first-name" name="first-name" placeholder="First Name">
-        <input type="email" id="email" name="email" placeholder="Email Address">
-        <button class="sign-up__button"><a class="sign-up__link" href="">Sign Up</a></button>
+        <div class="sign-up__inputs">
+          <input type="text" id="first-name" name="first-name" placeholder="First Name">
+          <input type="email" id="email" name="email" placeholder="Email Address">
+        </div>
+          <a class="sign-up__button sign-up__link" href="">Sign Up</a>
       </section>
     </main>
 
@@ -330,7 +360,7 @@
         </div>
         <div class="footer__col-3">
           <span class="column-header"><p>Connect With Us</p></span>
-          <address><p class="footer__address">200 Toro Circle <br/> Tortugas, NM 88001</p></address>
+          <address><a href="" class="footer__address">200 Toro Circle <br/> Tortugas, NM 88001</a></address>
           <a class="footer__telephone" href="tel:1-800-294-6800">+1 800-294-6800</a>
           <a class="footer__email" href="mailto:eat@torofoods.com">eat@torofoods.com</a>
           <div class="footer__social-links">
